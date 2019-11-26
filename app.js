@@ -20,7 +20,7 @@ app.listen(server_port, server_host, function () {
 var MY_SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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";
 var slack = require('slack-notify')(MY_SLACK_WEBHOOK_URL);
 
-var jenkins = require('jenkins')({ baseUrl: 'http://172.31.37.185:8080', crumbIssuer: false });
+var jenkins = require('jenkins')({ baseUrl: 'http://admin:admin@3.134.77.242:8080', crumbIssuer: false });
 
 jenkins.info(function(err, data) {
   if(err){
