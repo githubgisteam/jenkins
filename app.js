@@ -30,10 +30,10 @@ jenkins.info(function(err, data) {
     console.log('info', data);
   }
 
-});
+});  
 
 
-app.post('/test', (req, response) => {
+app.post('/jenkins', (req, response) => {
   console.log("Display name ", req.body.queryResult.intent.displayName);
   switch (req.body.queryResult.intent.displayName) {
     case "enablejob":
