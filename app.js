@@ -30,8 +30,7 @@ jenkins.info(function(err, data) {
     console.log('info', data);
   }
 
-});  
-
+});      
 
 app.post('/jenkins', (req, response) => {
   console.log("Display name ", req.body.queryResult.intent.displayName);
